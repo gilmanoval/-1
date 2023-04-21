@@ -1,0 +1,6 @@
+/*  
+добавлять новые уровни пока запрос не выведет пустоту, подсчитать количество боссов
+*/
+SELECT E2.ID, 'его боссы ->', E1.ID, B1.ID 
+	FROM EMPLOYEE AS B1, EMPLOYEE AS E1, EMPLOYEE AS E2 
+	WHERE B1.ID = E1.CHIEF_ID AND E1.ID = E2.CHIEF_ID; 
